@@ -10,12 +10,8 @@ import (
 
 var BotID string
 
-const (
-	Token string = "ODQ0Njg3NDg3MTkyMjY4ODUw.YKWChg.YuCW2_GN71YAY5g2cCQmQYCvHgs"
-)
-
 func Init() {
-	testBot, err := discordgo.New("Bot " + Token)
+	testBot, err := discordgo.New("Bot " + config.Token)
 
 	if err != nil {
 		fmt.Println(err.Error())
