@@ -9,12 +9,14 @@ import (
 var (
 	Token     string
 	BotPrefix string
+	Language  string
 	config    *configStruct
 )
 
 type configStruct struct {
 	Token     string "json:\"Token\""
 	BotPrefix string "json:\"BotPrefix\""
+	Language  string "json:\"Language\""
 }
 
 func ReadConfig() error {
