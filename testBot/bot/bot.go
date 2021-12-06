@@ -38,7 +38,7 @@ func Init() {
 		return
 	}
 
-	fmt.Println("Τρέχει ο βότος!")
+	fmt.Println("Τo bot είναι σε λειτουργία!")
 
 	<-make(chan struct{})
 	return
